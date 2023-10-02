@@ -1,0 +1,117 @@
+.categories {
+   &__body {
+      @include adaptiveValue('padding-top', 40, 20);
+      @include adaptiveValue('padding-bottom', 32, 16);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      @media (max-width: 1140px){
+         flex-direction: column;
+         gap: 16px;
+         align-items: stretch;
+      }
+   }
+
+   &__list {
+      display: flex;
+      gap: 9px;
+      @media (max-width: 1140px){
+         flex: 0 1 70%;
+         flex-wrap: wrap;
+         row-gap: 16px;
+      }
+
+      li {
+         cursor: pointer;
+         transition: all 0.3s ease;
+         @include adaptiveValue('padding-top', 14, 7);
+         @include adaptiveValue('padding-bottom', 16, 8);
+         @include adaptiveValue('padding-right', 26, 14);
+         @include adaptiveValue('padding-left', 26, 14);
+         background: var(--light-grey-f9);
+         border-radius: 30px;
+
+         &.active {
+            background: var(--bg-grey);
+            color: var(--white);
+         }
+      }
+   }
+}
+
+.sort-by {
+   position: relative;
+
+   svg {
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%) rotate(180deg);
+      transition: transform 0.3s ease;
+
+      &.rotated {
+         transform: translateY(-50%) rotate(0deg);
+      }
+   }
+
+   &__choice {
+      cursor: pointer;
+      padding-left: 17px;
+      color: var(--grey);
+      letter-spacing: 0.21px;
+      font-weight: 700;
+      font-size: 14px;
+
+      &-result {
+         color: var(--orange);
+         font-size: 14px;
+         letter-spacing: 0.21px;
+         font-weight: 400;
+         margin-left: 8px;
+      }
+   }
+
+   &__modal {
+      position: absolute;
+      right: 0;
+      top: 0;
+      z-index: 10;
+      overflow: hidden;
+      opacity: 0;
+      max-height: 0px;
+      display: flex;
+      flex-direction: column;
+      background: var(--white);
+      border-radius: 14px;
+      box-shadow: 0px 5px 15px 0px #00000017;
+      transition: all 0.3s ease;
+      @media (max-width: 1140px){
+         left: 0;
+         right: unset;
+      }
+
+      &.opened {
+         top: 30px;
+         overflow: visible;
+         opacity: 1;
+         max-height: 136px;
+         padding: 13px 0px;
+      }
+
+      li {
+         cursor: pointer;
+         font-size: 14px;
+         letter-spacing: 0.21px;
+         padding: 10px 14px 11px;
+         transition: all 0.3s ease;
+
+         &.active {
+            color: var(--orange);
+            background: rgba(254, 95, 30, 0.05);
+         }
+         &:hover {
+            background: var(--light-grey-f3);
+         }
+      }
+   }
+}

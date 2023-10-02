@@ -1,0 +1,80 @@
+.header{
+   border-bottom: 1px solid #f6f6f6;
+   @include adaptiveValue('padding-bottom', 40, 20);
+   &__body{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+      @media (max-width: 500px){
+         flex-direction: column;
+         align-items: flex-start;
+         gap: 14px;
+      }
+   }
+   &__logo-inner{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 17px;
+   }
+   &__cart{
+      padding: 16px 23px;
+      background: var(--orange);
+      display: flex;
+      gap: 27px;
+      color: var(--white);
+   }
+   &__price{
+      position: relative;
+      &:after{
+         content: '';
+         position: absolute;
+         right: -13px;
+         top: 0;
+         height: 25px;
+         width: 1px;
+         background: rgba(255, 255, 255, 0.25);
+      }
+   }
+}
+.price-header{
+   display: flex;
+   align-items: center;
+   gap: 4px;
+   &__cost{
+      font-size: 16px;
+      font-weight: 700;
+   }
+   svg{
+      width: 10px;
+      height: 21px;
+   }
+}
+.count-header{
+   display: flex;
+   align-items: center;
+   gap: 8px;
+   svg{
+      width: 16px;
+      height: 16px;
+   }
+   &__items-count{
+      font-weight: 700;
+      font-size: 16px;
+   }
+}
+.logo-header{
+   &__title{
+      color: #000;
+      @include adaptiveValue('font-size', 24, 20);
+      font-weight: 800;
+      font-family: 'Proxima Nova Th';
+      letter-spacing: 0.24px;
+      text-transform: uppercase;
+   }
+   &__subtitle{
+      @include adaptiveValue('font-size', 16, 14);
+      color: var(--grey-7b);
+   }
+}

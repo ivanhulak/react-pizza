@@ -1,0 +1,147 @@
+{
+   "pizzas": [
+      {
+         "id": 0,
+         "imageUrl": "https://dodopizza-a.akamaihd.net/static/Img/Products/37f91b9769584c128123d3c7e1c35593_292x292.webp",
+         "name": "Мексиканская мясная пицца",
+         "type": [
+            0
+         ],
+         "sizes": [
+            26,
+            30
+         ],
+         "price": 220,
+         "category": 1,
+         "rating": 1
+      },
+      {
+         "id": 1,
+         "imageUrl": "https://dodopizza-a.akamaihd.net/static/Img/Products/Pizza/en-GB/b1ff2989-3fd0-436a-8497-6558f1a82df1_292x292.webp",
+         "name": "Пеперони",
+         "type": [
+            1
+         ],
+         "sizes": [
+            30,
+            40
+         ],
+         "price": 160,
+         "category": 4,
+         "rating": 2
+      },
+      {
+         "id": 2,
+         "imageUrl": "https://dodopizza-a.akamaihd.net/static/Img/Products/Pizza/en-GB/b5f1aa0e-a950-4dde-94eb-1c1d79ae82ca_292x292.webp",
+         "name": "Курица BBQ",
+         "type": [
+            0,
+            1
+         ],
+         "sizes": [
+            26,
+            30,
+            40
+         ],
+         "price": 235,
+         "category": [
+            0,
+            3
+         ],
+         "rating": 5
+      },
+      {
+         "id": 3,
+         "imageUrl": "https://dodopizza-a.akamaihd.net/static/Img/Products/f753870f0087467b95dce167597dac3a_292x292.webp",
+         "name": "Додо BBQ",
+         "type": [
+            1
+         ],
+         "sizes": [
+            26,
+            30,
+            40
+         ],
+         "price": 200,
+         "category": 3,
+         "rating": 2
+      },
+      {
+         "id": 4,
+         "imageUrl": "https://dodopizza-a.akamaihd.net/static/Img/Products/Pizza/en-GB/07153596-da67-413f-b5fc-e1f7ee11ca3a_292x292.webp",
+         "name": "Вегитарианская пицца",
+         "type": [
+            0,
+            1
+         ],
+         "sizes": [
+            26,
+            40
+         ],
+         "price": 260,
+         "category": 2,
+         "rating": 7
+      },
+      {
+         "id": 5,
+         "imageUrl": "https://dodopizza-a.akamaihd.net/static/Img/Products/Pizza/en-GB/580f512a-65bb-47ba-80aa-b1efa642a8c7_292x292.webp",
+         "name": "Сладкий чили пицца",
+         "type": [
+            0
+         ],
+         "sizes": [
+            40
+         ],
+         "price": 190,
+         "category": 4,
+         "rating": 8
+      },
+      {
+         "id": 6,
+         "imageUrl": "https://dodopizza-a.akamaihd.net/static/Img/Products/Pizza/en-GB/16b54c10-0389-4be0-b2d1-26b97a4bc1aa_292x292.webp",
+         "name": "Гавайская пицца",
+         "type": [
+            0,
+            1
+         ],
+         "sizes": [
+            26,
+            30,
+            40
+         ],
+         "price": 210,
+         "category": 5,
+         "rating": 3
+      },
+      {
+         "id": 7,
+         "imageUrl": "https://dodopizza-a.akamaihd.net/static/Img/Products/Pizza/en-GB/71bc08ea-5dc3-438c-a022-3d79189d482f_292x292.webp",
+         "name": "Маргарита",
+         "type": [
+            0
+         ],
+         "sizes": [
+            26,
+            30
+         ],
+         "price": 220,
+         "category": 1,
+         "rating": 6
+      },
+      {
+         "id": 8,
+         "imageUrl": "https://dodopizza-a.akamaihd.net/static/Img/Products/Pizza/en-GB/8e11728e-59d5-4401-8715-b6216198e103_292x292.webp",
+         "name": "Курица Спайси",
+         "type": [
+            0,
+            1
+         ],
+         "sizes": [
+            26
+         ],
+         "price": 240,
+         "category": 4,
+         "rating": 10
+      }
+   ]
+}
